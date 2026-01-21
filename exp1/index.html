@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Feedback</a>
+    </nav>
+
+    <div class="dashboard">
+      <div class="welcome-card">
+        <h1>Welcome, Student 👋</h1>
+        <p id="dateBox"></p>
+        <button id="themeBtn">Toggle Dark Mode</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Profile Status</h3>
+          <p>Editable</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Course</h3>
+          <p>B.Com</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Feedback</h3>
+          <p>Available</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a href="profile.html" class="action-btn">Edit Profile</a>
+        <a href="contact.html" class="action-btn outline">Send Feedback</a>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
