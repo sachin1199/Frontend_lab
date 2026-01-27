@@ -2,31 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Profile</title>
+    <title>Exp 2</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <!-- TOP BAR -->
+    <div class="topbar">fakebook</div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+      <!-- LEFT SIDEBAR -->
       <div class="left">
-        <img src="" class="profile-pic" />
-        <h3 id="name">First Name</h3>
-        <h4>City</h4>
-        <p id="city">Himachal</p>
+        <p>Home</p>
+        <p>Profile</p>
+        <p>Friends</p>
+        <p>Photos</p>
       </div>
-      <div class="middle">
-        <h2 id="mainName">First Name</h2>
-        <h4>About</h4>
-        <p id="bio">coding and learning new things.</p>
-        <h4>Post</h4>
-        <p>Working on my web project today</p>
+
+      <!-- CENTER CONTENT -->
+      <div class="center">
+        <!-- PROFILE CARD -->
+        <div class="card" id="profileView">
+          <h2 id="nameText">YASH</h2>
+          <p>Bio: <span id="rollText"></span></p>
+          <p>Work: <span id="courseText"></span></p>
+          <button id="editBtn">Edit Profile</button>
+        </div>
+
+        <!-- EDIT FORM -->
+        <div class="card hidden" id="profileEdit">
+          <input id="nameInput" placeholder="Name" />
+          <input id="rollInput" placeholder="BIO" />
+          <input id="courseInput" placeholder="WORK" />
+          <button id="saveBtn">Save</button>
+        </div>
+
+        <!-- FEED -->
+        <div class="card">
+          <h4>Post</h4>
+          <p>Hello, this is my first post.</p>
+        </div>
+
+        <div class="card">
+          <h4>Post</h4>
+          <p>Learning Web Development.</p>
+        </div>
       </div>
+
+      <!-- RIGHT SIDEBAR -->
       <div class="right">
-        <h3>Edit Profile</h3>
-        <input type="text" id="nameInput" placeholder="Enter name" />
-        <input type="text" id="cityInput" placeholder="Enter city" />
-        <button onclick="updateProfile()">Update Profile</button>
+        <h4>Suggestions</h4>
+        <p>Web Club</p>
+        <p>AI Group</p>
+        <p>Sports Team</p>
       </div>
     </div>
-    <script src="script.js" defer></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
